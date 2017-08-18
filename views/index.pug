@@ -4,7 +4,25 @@ html(lang="en")
 
 		meta(charset="utf-8")
 		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-		
+
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css")
+		link(rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css")
 	body
-		h1 Hello World :)
+		div.container
+			div.header.clearfix
+				nav
+					ul.nav.nav-pills.float-right
+						li.nav-item
+							a.nav-link.active(href="/") Home
+								span.sr-only (current)
+						li.nav-item
+							a.nav-link(href="/scanner") Scanner
+						li.nav-item
+							a.nav-link(href="/cart") Cart
+				h3.text-muted Xpress
+			div.jumbotron
+				h1.display-3 Xpress
+				p
+					a.btn.btn-lg.btn-success(href="/scanner" role="button") Scanner
+				p
+					a.btn.btn-lg.btn-info(href="/cart" role="button") Cart
